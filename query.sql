@@ -36,3 +36,12 @@ INSERT INTO professori (`CodiceProfessore`, `Cognome`, `Nome`, `ClasseConcorso`)
 (8, "Lionetto", "Romina", "A042"),
 (9, "Meoli", "Serafino", "A042"),
 (10, "Mussardo", "Maria Rosaria", "A346");
+
+/*
+ES 1
+Visualizzare le valutazioni riguardanti le materie umanistiche
+*/
+
+SELECT * 
+FROM `valutazioni` 
+WHERE `Materia` IN ("ITALIANO", "STORIA", "INGLESE")
