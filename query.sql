@@ -73,3 +73,21 @@ Visualizzare le valutazioni di gennaio 2018
 SELECT * 
 FROM `valutazioni` 
 WHERE `DataVal` BETWEEN '2018-01-01' AND '2018-01-31'
+
+/*
+ES 5
+Visualizzare le valutazioni delle materie di laboratorio
+*/
+
+-- SELECT * 
+-- FROM `valutazioni` 
+-- WHERE `Materia` LIKE 
+
+/*
+ES 6
+Visualizzare gli studenti che inizionao con 'B'
+*/
+
+SELECT * 
+FROM `studenti` 
+WHERE `Cognome` LIKE 'B%'
