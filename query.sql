@@ -45,3 +45,31 @@ Visualizzare le valutazioni riguardanti le materie umanistiche
 SELECT * 
 FROM `valutazioni` 
 WHERE `Materia` IN ("ITALIANO", "STORIA", "INGLESE")
+
+/*
+ES 2
+Visualizzare le valutazioni sufficienti nelle materie non umanistiche
+*/
+
+SELECT * 
+FROM `valutazioni` 
+WHERE "Voto" >= 6
+    AND "Materia" NOT IN ("ITALIANO", "STORIA", "INGLESE")
+
+/*
+ES 3
+Visualizzare le materie le cui valutazioni sono comprese tra 8 e 10
+*/
+
+SELECT * 
+FROM `valutazioni` 
+WHERE `Voto` BETWEEN 8 AND 10
+
+/*
+ES 4
+Visualizzare le valutazioni di gennaio 2018
+*/
+
+SELECT * 
+FROM `valutazioni` 
+WHERE `DataVal` BETWEEN '2018-01-01' AND '2018-01-31'
