@@ -24,3 +24,15 @@ INSERT INTO studenti (`Cognome`, `Nome`, `DataNascita`, `CodiceClasse`) VALUES
 ("Mazzeo", "Antonio", "1999-04-05", "17"),
 ("Primiceri", "Edoardo", "1999-05-09", "19");
 
+
+INSERT INTO professori (`CodiceProfessore`, `Cognome`, `Nome`, `ClasseConcorso`) VALUES 
+(1, "Palombo", "Massimo", "A042"),
+(2, "Orlando", "Maria Rosaria", "A050"),
+(3, "Petrachi", "Maria Rosaria", "A042"),
+(4, "Gargasole", "Giuseppina", "A047"),
+(5, "Barone", "Antonio", "A042"),
+(6, "Gervasi", "Antonio", "A042"),
+(7, "Candido", "Abramo", "A042"),
+(8, "Lionetto", "Romina", "A042"),
+(9, "Meoli", "Serafino", "A042"),
+(10, "Mussardo", "Maria Rosaria", "A346");
